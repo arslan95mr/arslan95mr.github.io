@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Alfa+Slab+One&family=Cardo:ital,wght@0,400;0,700;1,400&family=Comfortaa:wght@300;600&family=Josefin+Sans:wght@100;300;500&family=Outfit:wght@100;200;300;400;500;600;700;800;900&family=Pacifico&family=Passion+One:wght@400;700&family=Public+Sans:ital,wght@0,100;0,200;0,300;0,500;0,700;0,900;1,500&family=Secular+One&display=swap');
+
+html, body {
+    height:100%;
+}
+
+body {
+    background-image: linear-gradient(rgb(87, 149, 220), rgb(230, 230, 230));
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+}
+
+main, #about-page, footer {
+    display: block;
+    box-sizing: border-box;
+    width: 100%; 
+}
+
+/* H E A D E R */
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    height: 20%;
+}
+
+#head-logo {
+    margin: 1em
+}
+#head-logo img {
+    width: 4em;
+}
+#project-name {
+    font-size: 3em;
+    font-family: 'Passion One';
+    margin: 0em 4em 0em 0em;    
+}
+
+/* N A V I G A T I O N   B A R */
+nav {
+    padding: 2px;
+    font-family: 'Outfit', sans-serif;
+    font-weight:300;
+    text-align: center;
+    z-index: 1;
+}
+
+nav .menu {
+    position: relative;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav .menu li {
+    display: inline-block;
+}
+
+nav .menu li a {
+    display: block;
+    color: rgb(0, 0, 0);
+    padding: 5px 12px;
+    margin: -2px;
+    text-decoration: none;
+    font-size: 1.3em;
+    transition: all;
+    transition-duration: 0.5s;
+}
+
+nav .menu li a:hover,
+nav .menu li:hover a {
+    color: rgb(0, 34, 97);
+    font-weight: bold;
+}
+
+.nav-links {
+    transition: 20s;
+}
+
+/* M A I N */
+main {
+    height: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#sec-main {
+    font-family: 'Outfit';
+}
+#sec-main, #sec-about, #sec-main-banner, #sec-about-banner {
+    width: 50%;
+    box-sizing: border-box;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+main #sec-main h1 {
+    font-size:xx-large;
+}
+
+main #icon-gplay, #icon-astore {
+    display: inline-block;
+}
+
+main #icon-gplay img, #icon-astore img {
+    width: 12em;
+}
+main #icon-gplay img:hover, #icon-astore img:hover {
+    transition: .5s ease;
+    opacity: 0.5;
+}
+
+#sec-main-banner img, #sec-about-banner img {
+    width: 35em;
+}
+
+/* A B O U T   P A G E */
+#about-page {
+    background-image: linear-gradient(rgb(48, 84, 125), rgb(227, 159, 212));
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+#sec-about-banner {
+    padding-top: 4em ;
+    padding-left: 2em;
+}
+
+#sec-about h2 {
+    font-family: 'Abril Fatface';
+    color: white;
+}
+
+#sec-about ul, p {
+    font-family: 'Josefin Sans';
+    color: rgb(0, 0, 0);
+    font-size: 1.3em;
+}
+
+/* F O O T E R */
+footer {
+    height: 100%;
+    background-image: linear-gradient(rgb(243, 153, 89), rgb(17, 26, 61));
+    padding: 1em 1.5em;
+}
+#foot-end {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    height: 40%;
+}
+#foot-start {
+    height: 60%;
+}
+#e-mail-address, #nav-bar, #east-south {
+    width: 30%;
+}
+#nav-bar ul , #e-mail-address ul{
+    list-style: none;
+    padding-left: 0;
+}
+#nav-bar ul li a, #e-mail-address ul li a {
+    text-decoration: none;
+    font-family: 'Public Sans';
+    font-size: 100;
+    color: rgb(191, 198, 146);
+}
+
+#nav-bar ul li a:hover, #e-mail-address ul li a:hover {
+    color: white;
+}
+#east-south {
+    text-align: center;
+}
+#east-south h4 {
+    color: aliceblue;
+}
+footer span {
+    font-family: 'Secular One';
+    color: aquamarine;
+}
+
+/* S O C I A L   M E D I A */
+#social-media {
+    text-align: center;
+    padding-top: 1em;
+}
+
+/* I C O N S */
+.icon i {
+    background-color: rgb(51, 59, 66); 
+    color: rgb(255, 255, 255);
+    width: 35px;
+    padding: 5px 0;
+    font-size: 25px;
+    border: 1px solid rgb(255, 254, 254);
+    border-radius: 50%;
+    transition: all;
+    transition-duration: 0.5s;
+}
+
+.icon i:hover {
+    background-color: rgb(255, 255, 255); 
+    color: rgb(51, 59, 66);
+    border-color: rgb(12, 12, 12);
+    box-shadow: 0 0 4px 3px rgba(97, 96, 96, 0.5);
+}
